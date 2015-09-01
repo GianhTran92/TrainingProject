@@ -7,6 +7,7 @@
     <color name="white">#ffffff</color>
     <color name="blue_background">#00bbe6</color>
     <color name="textcolor">#707070</color>
-    <color name="transparent80">#ccffffff</color>
+    <color name="transparent80">#33000000</color>
+    <color name="red">#ff0000</color>
 
 </resources>

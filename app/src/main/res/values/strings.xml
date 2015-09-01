@@ -26,5 +26,11 @@
     <string name="edittext_hint_promotioncode">Promotion Code</string>
     <string name="checkbox_text_subsrcibe_via_email">I wish to subscribe to daily deal alert via email</string>
     <string name="txt_dialog_find_your_account">FIND YOUR ACCOUNT</string>
+    <string name="textview_status_erorr">Enter your username or the email address associated with your account</string>
+    <string name="button_text_confirm">Confirm</string>
+    <string name="button_text_cancel">Cancel</string>
+    <string name="error.account">Tài khoản chưa đúng</string>
+    <string name="dialog_forget_password_title">FIND YOUR ACCOUNT</string>
+
 
 </resources>
