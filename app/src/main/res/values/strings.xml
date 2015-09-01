@@ -11,4 +11,20 @@
     <string name="tittle_fragment_four">Fragment 4</string>
     <string name="title_activity_login">LoginActivity</string>
 
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="edittext_hint_username">Username / Email Address</string>
+    <string name="edittext_hint_password">Password</string>
+    <string name="button_text_signin">Sign in</string>
+    <string name="textview_text_forget_password">Forget password?</string>
+    <string name="button_text_signup">Sign Up</string>
+    <string name="edittext_hint_username_for_signup">Username</string>
+    <string name="edittext_hint_email_for_signup">Email</string>
+    <string name="edittext_hint_confirmpassword">Confirm Password</string>
+    <string name="textview_text_tap_to_change_profile_image">Tap to change profile image</string>
+    <string name="edittext_hint_promotioncode">Promotion Code</string>
+    <string name="checkbox_text_subsrcibe_via_email">I wish to subscribe to daily deal alert via email</string>
+    <string name="txt_dialog_find_your_account">FIND YOUR ACCOUNT</string>
+
 </resources>
