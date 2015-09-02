@@ -1,7 +1,28 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="tabars.height">40dp</dimen>
-    <dimen name="toolbar.elevation">2dp</dimen>
+    <dimen name="tabars_height">40dp</dimen>
+    <dimen name="toolbar_elevation">2dp</dimen>
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="button_margintop_signIn">40dp</dimen>
+    <dimen name="button_marginleft_signIn">20dp</dimen>
+    <dimen name="button_marginright_signIn">20dp</dimen>
+    <dimen name="textview_marginbottom_forget_password">5dp</dimen>
+    <dimen name="button_layoutheight_signIn">40dp</dimen>
+    <dimen name="linearlayout_margintop">80dp</dimen>
+    <dimen name="button_textsize_signup">20sp</dimen>
+    <dimen name="button_layoutheight_signup">35dp</dimen>
+    <dimen name="edittext_marginleftright">20dp</dimen>
+    <dimen name="image_margintop">20dp</dimen>
+    <dimen name="edittext_username_textsize">20sp</dimen>
+    <dimen name="edittext_password_textsize">20sp</dimen>
+    <dimen name="linearlayout_marginbottom">100dp</dimen>
+    <dimen name="linearlayout_marginletfandright">30dp</dimen>
+    <dimen name="image_marginbottom">5dp</dimen>
+    <dimen name="edittext_username_margintop">5dp</dimen>
+    <dimen name="button_margintop_signUp">10dp</dimen>
+    <dimen name="linearlayout_signupfragment_margintop">20dp</dimen>
+    <dimen name="linearlayout_signupfragment_marginbottom">60dp</dimen>
+    <dimen name="image_signup_margintop">15dp</dimen>
+
 </resources>
