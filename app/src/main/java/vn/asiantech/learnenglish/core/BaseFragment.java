@@ -10,6 +10,7 @@ import android.support.v4.app.Fragment;
  * base for fragment extends to add and replace fragment
  */
 public class BaseFragment extends Fragment {
+    public String TAG = this.getClass().getSimpleName();
     public void addFragment(@IdRes int containerViewId,
                             @NonNull Fragment fragment,
                             @NonNull String fragmentTag) {

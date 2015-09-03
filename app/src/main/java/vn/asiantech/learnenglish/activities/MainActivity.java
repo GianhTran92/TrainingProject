@@ -15,10 +15,10 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
 import vn.asiantech.learnenglish.R;
-import vn.asiantech.learnenglish.fragment.TopFragment;
 import vn.asiantech.learnenglish.fragment.Tab2Fragment;
 import vn.asiantech.learnenglish.fragment.Tab3Fragment;
 import vn.asiantech.learnenglish.fragment.Tab4Fragment;
+import vn.asiantech.learnenglish.fragment.TopFragment_;
 import vn.asiantech.learnenglish.tabstrip.PagerSlidingTabStrip;
 
 @EActivity(R.layout.activity_main)
@@ -102,7 +102,7 @@ public class MainActivity extends FragmentActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new TopFragment();
+                    return new TopFragment_();
                 case 1:
                     return new Tab2Fragment();
                 case 2:

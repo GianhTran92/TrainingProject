@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="30">
+    <vn.asiantech.learnenglish.core.CircleImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="@dimen/circle.imageView.width"
+        android:layout_height="@dimen/circle.imageView.height"
+        android:layout_marginBottom="@dimen/circle.imageView.marginLeft"
+        android:src="@drawable/animal_avatar"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="28">
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/textView.margin.left"
+            android:text="@string/textview.title.text.animal"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/text.title.textSize"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/imgAvatar"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#cbcbcb"
+            android:layout_below="@+id/txtTitle"
+            android:id="@+id/imgLine"
+            android:layout_toRightOf="@+id/imgAvatar"
+            android:layout_toEndOf="@+id/imgAvatar" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/imgNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_top_next"
+        android:layout_alignBottom="@+id/txtTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"/>
+</LinearLayout>

@@ -11,7 +11,7 @@
         android:right="10dp"
         android:bottom="10dp" />
     <stroke
-        android:width="10dip"
+        android:width="0dip"
         android:color="#FFFFFF" />
     <corners android:radius= "10dp" />
 </shape>
