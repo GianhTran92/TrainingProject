@@ -1,6 +1,6 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="tabars_height">40dp</dimen>
+    <dimen name="tabars_height">50dp</dimen>
     <dimen name="toolbar_elevation">2dp</dimen>
     <dimen name="activity_horizontal_margin">0dp</dimen>
     <dimen name="activity_vertical_margin">0dp</dimen>
@@ -26,4 +26,6 @@
     <dimen name="image.signup.margintop">15dp</dimen>
     <dimen name="text.error.textsize">16sp</dimen>
     <dimen name="linerlayout.dialog.button.margintop">10dp</dimen>
+    <dimen name="actionbar.title.textsize">24sp</dimen>
+    <dimen name="actionbar.height">52dp</dimen>
 </resources>

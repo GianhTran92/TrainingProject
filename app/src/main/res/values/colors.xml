@@ -9,6 +9,8 @@
     <color name="textcolor">#707070</color>
     <color name="transparent80">#33000000</color>
     <color name="red">#ff0000</color>
+    <color name="DarkTurquoise">#00CED1</color>
+    <color name="actionbar.background">#00bbd2</color>
 
 
 </resources>
