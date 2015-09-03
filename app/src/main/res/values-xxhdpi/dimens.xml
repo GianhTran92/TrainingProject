@@ -26,5 +26,7 @@
     <dimen name="image.signup.margintop">15dp</dimen>
     <dimen name="text.textsize.find.your.account">26sp</dimen>
     <dimen name="image.background.line">2dp</dimen>
+    <dimen name="text.error.textsize">16sp</dimen>
+    <dimen name="linerlayout.dialog.button.margintop">10dp</dimen>
 
 </resources>
