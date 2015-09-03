@@ -8,36 +8,31 @@ import vn.asiantech.learnenglish.core.BaseActivity;
 import vn.asiantech.learnenglish.fragment.LoginFragment_;
 
 /***
- * the activity to load SplashScreen and contain to build login fragment and signup fragment
+ * the activity to load SplashScreen and contain to build login fragment and signUp fragment
  */
 
 @EActivity(R.layout.activity_login)
 public class LoginActivity extends BaseActivity {
 
     @AfterViews
-    void afterViews(){
+    void afterViews() {
         loadSplashScreen();
     }
 
-    public void loadSplashScreen() {
+    private void loadSplashScreen() {
         Thread splashTimer = new Thread() {
 
             @Override
             public void run() {
                 try {
-                    int LogoTimer = 0;
-                    while (LogoTimer < 3000) {
+                    int timer = 0;
+                    while (timer < 3000) {
                         sleep(100);
-                        LogoTimer += 100;
-                        //Log.e(TAG, "run " + LogoTimer);
+                        timer += 100;
                     }
                     addFragment(R.id.frameContain, LoginFragment_.builder().build(), "LoginFragment");
-                }
-                catch (InterruptedException e) {
+                } catch (InterruptedException e) {
                     e.printStackTrace();
-                }
-                finally {
-                    /* finish(); */
                 }
             }
         };

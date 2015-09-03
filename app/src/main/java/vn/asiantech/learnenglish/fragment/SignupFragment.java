@@ -3,7 +3,6 @@ package vn.asiantech.learnenglish.fragment;
 import android.widget.Button;
 import android.widget.EditText;
 
-import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
@@ -38,11 +37,6 @@ public class SignupFragment extends BaseFragment {
 
     @ViewById(R.id.btnSignin)
     Button mBtnSignin;
-
-    @AfterViews
-    void affterView(){
-
-    }
 
     @Click(R.id.btnSignup)
     void setmBntSignup(){
