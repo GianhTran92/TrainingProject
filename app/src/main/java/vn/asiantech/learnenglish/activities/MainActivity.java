@@ -15,7 +15,7 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
 import vn.asiantech.learnenglish.R;
-import vn.asiantech.learnenglish.fragment.Tab1Fragment;
+import vn.asiantech.learnenglish.fragment.TopFragment;
 import vn.asiantech.learnenglish.fragment.Tab2Fragment;
 import vn.asiantech.learnenglish.fragment.Tab3Fragment;
 import vn.asiantech.learnenglish.fragment.Tab4Fragment;
@@ -84,10 +84,10 @@ public class MainActivity extends FragmentActivity {
     // ADAPTER VIEWPAGER
     public class PageAdapter extends FragmentStatePagerAdapter implements PagerSlidingTabStrip.IconTabProvider {
         private static final int CUSTOM_ICON = -1;
-        private final int[] ICONS = {R.drawable.selector_tab,
-                R.drawable.selector_tab,
-                R.drawable.selector_tab,
-                R.drawable.selector_tab};
+        private final int[] ICONS = {R.drawable.icon1,
+                R.drawable.icon2,
+                R.drawable.icon3,
+                R.drawable.icon4};
 
         public PageAdapter(FragmentManager fm) {
             super(fm);
@@ -102,7 +102,7 @@ public class MainActivity extends FragmentActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new Tab1Fragment();
+                    return new TopFragment();
                 case 1:
                     return new Tab2Fragment();
                 case 2:
