@@ -1,29 +1,25 @@
 package vn.asiantech.learnenglish.activities;
 
-import android.support.annotation.IdRes;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.widget.ImageView;
-
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.ViewById;
 
 import vn.asiantech.learnenglish.R;
+import vn.asiantech.learnenglish.core.BaseActivity;
 import vn.asiantech.learnenglish.fragment.LoginFragment_;
 
+/***
+ * the activity to load SplashScreen and contain to build login fragment and signup fragment
+ */
+
 @EActivity(R.layout.activity_login)
-public class LoginActivity extends FragmentActivity {
-    @ViewById(R.id.imgLogosmall)
-    ImageView mImglogosmall;
+public class LoginActivity extends BaseActivity {
 
     @AfterViews
     void afterViews(){
-        loadSplashscreen();
+        loadSplashScreen();
     }
 
-    public void loadSplashscreen() {
+    public void loadSplashScreen() {
         Thread splashTimer = new Thread() {
 
             @Override
@@ -47,14 +43,5 @@ public class LoginActivity extends FragmentActivity {
         };
         splashTimer.start();
     }
-    public void addFragment(@IdRes int containerViewId,
-                            @NonNull Fragment fragment,
-                            @NonNull String fragmentTag) {
-        getSupportFragmentManager()
-                .beginTransaction()
-                .add(containerViewId, fragment, fragmentTag)
-                .disallowAddToBackStack()
-                .commit();
 
-    }
 }
