@@ -25,5 +25,5 @@
         app:pstsIndicatorHeight="0dp"
         app:pstsShouldExpand="true"
         android:background="@color/taptrip.background"
-        android:layout_height="@dimen/tabars.height" />
+        android:layout_height="@dimen/tabars_height" />
 </RelativeLayout>

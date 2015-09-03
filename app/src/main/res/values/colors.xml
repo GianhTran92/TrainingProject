@@ -2,12 +2,13 @@
 <resources>
     <color name="background_tab_pressed">#6633B5E5</color>
     <color name="ColorPrimary">#00897B</color>
-    <color name="taptrip_background">#222628</color>
+    <color name="taptrip.background">#222628</color>
     <color name="main">#377EB0</color>
     <color name="white">#ffffff</color>
     <color name="blue_background">#00bbe6</color>
     <color name="textcolor">#707070</color>
     <color name="transparent80">#33000000</color>
     <color name="red">#ff0000</color>
+
 
 </resources>

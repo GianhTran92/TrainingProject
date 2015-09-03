@@ -1,9 +1,5 @@
 package vn.asiantech.learnenglish.fragment;
 
-import android.support.annotation.IdRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -14,9 +10,14 @@ import org.androidannotations.annotations.ViewById;
 
 import vn.asiantech.learnenglish.R;
 import vn.asiantech.learnenglish.activities.MainActivity_;
+import vn.asiantech.learnenglish.core.BaseFragment;
+/*
+ * fragment for sign up account
+ */
+
 
 @EFragment(R.layout.fragment_signup)
-public class SignupFragment extends Fragment {
+public class SignupFragment extends BaseFragment {
     @ViewById(R.id.edtUsername)
     EditText mEdtUsername;
 
@@ -53,14 +54,4 @@ public class SignupFragment extends Fragment {
         replaceFragment(R.id.frameContain, LoginFragment_.builder().build(), "SigninFragment", null);
     }
 
-    protected void replaceFragment(@IdRes int containerViewId,
-                                   @NonNull Fragment fragment,
-                                   @NonNull String fragmentTag,
-                                   @Nullable String backStackStateName) {
-        getActivity().getSupportFragmentManager()
-                .beginTransaction()
-                .replace(containerViewId, fragment, fragmentTag)
-                .addToBackStack(null)
-                .commit();
-    }
 }
