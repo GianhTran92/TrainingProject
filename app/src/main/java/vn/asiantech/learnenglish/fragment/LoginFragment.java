@@ -1,11 +1,8 @@
 package vn.asiantech.learnenglish.fragment;
 
 import android.app.Dialog;
-import android.support.annotation.IdRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -17,57 +14,54 @@ import org.androidannotations.annotations.ViewById;
 
 import vn.asiantech.learnenglish.R;
 import vn.asiantech.learnenglish.activities.MainActivity_;
-
+import vn.asiantech.learnenglish.core.BaseFragment;
+/*
+ * fragment for login to app
+ */
 @EFragment(R.layout.fragment_login)
-public class LoginFragment extends Fragment {
+public class LoginFragment extends BaseFragment implements OnClickListener{
+    Dialog mDialog;
+
     @ViewById(R.id.edtUsername)
-    EditText mEdtusername;
+    EditText mEdtUserName;
 
     @ViewById(R.id.edtPassword)
     EditText mEditPassword;
 
-    @ViewById(R.id.txtErorr)
-    TextView mTxterorr;
+    @ViewById(R.id.txtError)
+    TextView mTxtError;
+
+    @ViewById(R.id.edtDialogUsername)
+    EditText mEdtDialogUserName;
+
+    @ViewById(R.id.btnConfirm)
+    Button mBtnConfirm;
+
+    @ViewById(R.id.btnCancel)
+    Button mBtnCancel;
 
 
     @Click(R.id.btnSignup)
-    void setmBtnSignup(){
+    void ClickSignUp(){
         replaceFragment(R.id.frameContain, SignupFragment_.builder().build(), "SignupFragment", null);
     }
     @Click(R.id.btnSignin)
-    void setmBtnSignin(){
-        String username = mEdtusername.getText().toString();
+    void ClickSignIn(){
+        String username = mEdtUserName.getText().toString();
         String password = mEditPassword.getText().toString();
 
         if(username.equals("admin") && password.equals("admin")){
             MainActivity_.intent(this).start();
         }
         else{
-            mTxterorr.setText(getResources().getString(R.string.error_account));
+            mTxtError.setText(getResources().getString(R.string.error_account));
         }
     }
     @Click(R.id.txtForgetpassword)
-    void setmTxtForgetpassword(){
-        final Dialog mDialog = new Dialog(getActivity());
+    void ClickForgetPassword(){
+        mDialog = new Dialog(getActivity());
         mDialog.setContentView(R.layout.dialog_forgetpassword);
         mDialog.setTitle(getResources().getString(R.string.dialog_forget_password_title));
-        EditText mEdtDialogUsername = (EditText) mDialog.findViewById(R.id.edtDialogUsername);
-        Button mBntConfirm = (Button) mDialog.findViewById(R.id.bntConfirm);
-        Button mBntCancel = (Button) mDialog.findViewById(R.id.bntCancel);
-
-        mBntConfirm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        mBntCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mDialog.dismiss();
-            }
-        });
         mDialog.show();
 
     }
@@ -76,14 +70,15 @@ public class LoginFragment extends Fragment {
     void afterView(){
 
     }
-    protected void replaceFragment(@IdRes int containerViewId,
-                                   @NonNull Fragment fragment,
-                                   @NonNull String fragmentTag,
-                                   @Nullable String backStackStateName) {
-        getActivity().getSupportFragmentManager()
-                .beginTransaction()
-                .replace(containerViewId, fragment, fragmentTag)
-                .addToBackStack(null)
-                .commit();
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btnConfirm:
+                mEdtDialogUserName.getText().toString();
+            case R.id.btnCancel:
+                mDialog.dismiss();
+            break;
+        }
     }
 }
