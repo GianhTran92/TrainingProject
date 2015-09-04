@@ -32,6 +32,10 @@
     <string name="error.account">Tài khoản chưa đúng</string>
     <string name="dialog_forget_password_title">FIND YOUR ACCOUNT</string>
     <string name="textview.title.text.animal">Animal</string>
+    <string name="top">Top</string>
+    <string name="favorite">Favorite</string>
+    <string name="question">Question</string>
+    <string name="setting">Setting</string>
 
 
 </resources>

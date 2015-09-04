@@ -33,9 +33,11 @@
     <dimen name="button.margin.left.and.right">20dp</dimen>
     <dimen name="listView.margin.top">50dp</dimen>
     <dimen name="listView.margin.left.and.right">40dp</dimen>
-    <dimen name="circle.imageView.width">100dp</dimen>
-    <dimen name="circle.imageView.height">100dp</dimen>
+    <dimen name="circle.imageView.width">60dp</dimen>
+    <dimen name="circle.imageView.height">60dp</dimen>
     <dimen name="textView.margin.left">20dp</dimen>
-    <dimen name="text.title.textSize">24sp</dimen>
+    <dimen name="text.title.textSize">18sp</dimen>
     <dimen name="circle.imageView.marginLeft">20dp</dimen>
+    <dimen name="image.layout.height">40dp</dimen>
+    <dimen name="toolbar.layout.height">100dp</dimen>
 </resources>

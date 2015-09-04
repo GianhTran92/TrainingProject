@@ -4,17 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <include
+    <vn.asiantech.learnenglish.core.ActionBarCustom
         android:id="@+id/toolbar"
-        layout="@layout/tool_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="@dimen/toolbar.layout.height">
+    </vn.asiantech.learnenglish.core.ActionBarCustom>
     <android.support.v4.view.ViewPager
         android:id="@+id/vpTest"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tabars_height"
         android:layout_below="@+id/toolbar"/>
 
     <vn.asiantech.learnenglish.tabstrip.PagerSlidingTabStrip
