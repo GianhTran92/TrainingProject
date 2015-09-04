@@ -27,11 +27,6 @@ public class TopFragment extends BaseFragment {
 
     @ViewById(R.id.lvTop)
     ListView mLvTop;
-//
-//    public TopFragment(ArrayList<TopModel> arr){
-//        super();
-//        this.mTop = arr;
-//    }
 
     @AfterViews
     void afterView(){

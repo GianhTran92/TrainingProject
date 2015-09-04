@@ -3,7 +3,6 @@ package vn.asiantech.learnenglish.fragment;
 import android.app.Dialog;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -34,11 +33,7 @@ public class LoginFragment extends BaseFragment implements OnClickListener{
     @ViewById(R.id.edtDialogUsername)
     EditText mEdtDialogUserName;
 
-    @ViewById(R.id.btnConfirm)
-    Button mBtnConfirm;
 
-    @ViewById(R.id.btnCancel)
-    Button mBtnCancel;
 
 
     @Click(R.id.btnSignup)

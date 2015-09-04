@@ -7,7 +7,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
 import android.view.ViewGroup;
 
 import org.androidannotations.annotations.AfterViews;
@@ -15,9 +14,10 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
 import vn.asiantech.learnenglish.R;
-import vn.asiantech.learnenglish.fragment.Tab2Fragment;
-import vn.asiantech.learnenglish.fragment.Tab3Fragment;
-import vn.asiantech.learnenglish.fragment.Tab4Fragment;
+import vn.asiantech.learnenglish.core.ActionBarCustom;
+import vn.asiantech.learnenglish.fragment.FavoriteFragment_;
+import vn.asiantech.learnenglish.fragment.QuestionFragment_;
+import vn.asiantech.learnenglish.fragment.SettingFragment_;
 import vn.asiantech.learnenglish.fragment.TopFragment_;
 import vn.asiantech.learnenglish.tabstrip.PagerSlidingTabStrip;
 
@@ -29,9 +29,10 @@ public class MainActivity extends FragmentActivity {
     @ViewById
     PagerSlidingTabStrip tabs;
     @ViewById
-    Toolbar toolbar;
+    ActionBarCustom toolbar;
 
     private String mTitle = "";
+    private int mImageRight = R.drawable.icon_search;
 
     @AfterViews
     public void afterViews() {
@@ -43,8 +44,9 @@ public class MainActivity extends FragmentActivity {
         PageAdapter adapter = new PageAdapter(getSupportFragmentManager());
         vpTest.setAdapter(adapter);
         tabs.setViewPager(vpTest);
-        mTitle = getResources().getString(R.string.hello_world)+1;
+        mTitle = getResources().getString(R.string.top);
         toolbar.setTitle(mTitle);
+        toolbar.setImageResource(mImageRight);
     }
 
     private void setEvent() {
@@ -57,21 +59,22 @@ public class MainActivity extends FragmentActivity {
             public void onPageSelected(int position) {
                 switch (position) {
                     case 0:
-                        mTitle = getResources().getString(R.string.hello_world)+position;
+                        mTitle = getResources().getString(R.string.top);
                         break;
                     case 1:
-                        mTitle = getResources().getString(R.string.hello_world)+position;
+                        mTitle = getResources().getString(R.string.favorite);
                         break;
                     case 2:
-                        mTitle = getResources().getString(R.string.hello_world)+position;
+                        mTitle = getResources().getString(R.string.question);
                         break;
                     case 3:
-                        mTitle = getResources().getString(R.string.hello_world)+position;
+                        mTitle = getResources().getString(R.string.setting);
                         break;
                     default:
                         break;
                 }
                 toolbar.setTitle(mTitle);
+
             }
 
             @Override
@@ -104,11 +107,11 @@ public class MainActivity extends FragmentActivity {
                 case 0:
                     return new TopFragment_();
                 case 1:
-                    return new Tab2Fragment();
+                    return new FavoriteFragment_();
                 case 2:
-                    return new Tab3Fragment();
+                    return new QuestionFragment_();
                 case 3:
-                    return new Tab4Fragment();
+                    return new SettingFragment_();
             }
             return null;
         }

@@ -197,5 +197,8 @@ public class ActionBarCustom extends RelativeLayout implements View.OnClickListe
     public void setTitle(String title) {
         mTxtViewTitle.setText(title);
     }
+    public void setImageResource(int right_icon){
+        mImgViewRight.setImageResource(right_icon);
+    }
 
 }
