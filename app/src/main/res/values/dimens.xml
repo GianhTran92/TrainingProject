@@ -40,4 +40,5 @@
     <dimen name="circle.imageView.marginLeft">20dp</dimen>
     <dimen name="image.layout.height">40dp</dimen>
     <dimen name="toolbar.layout.height">100dp</dimen>
+    <dimen name="circle.imageView.margin.top.and.bottom">5dp</dimen>
 </resources>
