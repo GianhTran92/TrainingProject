@@ -1,7 +1,6 @@
 package vn.asiantech.learnenglish.fragment;
 
 
-import android.support.v4.app.Fragment;
 import android.widget.ListView;
 
 import org.androidannotations.annotations.AfterViews;
@@ -14,38 +13,34 @@ import java.util.ArrayList;
 import vn.asiantech.learnenglish.R;
 import vn.asiantech.learnenglish.containers.TopContainers;
 import vn.asiantech.learnenglish.core.BaseFragment;
-import vn.asiantech.learnenglish.core.ListTopAdapter;
+import vn.asiantech.learnenglish.core.TopListItemAdapter;
 import vn.asiantech.learnenglish.model.TopData;
 import vn.asiantech.learnenglish.model.TopModel;
 
-/**
- * A simple {@link Fragment} subclass.
- */
-@EFragment(R.layout.fragment_top)
-public class TopFragment extends BaseFragment {
-
+@EFragment(R.layout.fragment_top_list_item)
+public class TopListItemFragment extends BaseFragment {
     ArrayList<TopModel> mTop;
-    ListTopAdapter mTopAdapter;
+    TopListItemAdapter mTopListItemAdapter;
 
-    @ViewById(R.id.lvTop)
-    ListView mLvTop;
+    @ViewById(R.id.lvTopListItem)
+    ListView mLvTopListItem;
 
     @AfterViews
-    void afterView(){
+    void afterViews(){
         mTop = new ArrayList<TopModel>();
         int i = 0;
-        while(i<TopData.getTitle().length){
+        while(i< TopData.getTitle().length){
             TopModel mTopModel = new TopModel(TopData.getTitle()[i], TopData.getAvatar()[i]);
             mTop.add(mTopModel);
             i++;
         }
-        mTopAdapter = new ListTopAdapter(getActivity(), mTop);
-        mLvTop.setAdapter(mTopAdapter);
-
+        mTopListItemAdapter = new TopListItemAdapter(getActivity(),mTop);
+        mLvTopListItem.setAdapter(mTopListItemAdapter);
     }
 
-    @ItemClick(R.id.lvTop)
+    @ItemClick(R.id.lvTopListItem)
     void clickItems(){
-        ((TopContainers)getParentFragment()).replaceFragment(new TopListItemFragment_(),true);
+        ((TopContainers)getParentFragment()).replaceFragment(new TopListItemDetailFragment_(), true);
     }
+
 }
