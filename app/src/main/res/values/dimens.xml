@@ -28,10 +28,10 @@
     <dimen name="linerlayout.dialog.button.margintop">10dp</dimen>
     <dimen name="actionbar.title.textsize">24sp</dimen>
     <dimen name="actionbar.height">52dp</dimen>
-    <dimen name="button.margin.bottom">10dp</dimen>
+    <dimen name="button.margin.bottom">15dp</dimen>
     <dimen name="button.margin.top">30dp</dimen>
     <dimen name="button.margin.left.and.right">20dp</dimen>
-    <dimen name="listView.margin.top">50dp</dimen>
+    <dimen name="listView.margin.top">30dp</dimen>
     <dimen name="listView.margin.left.and.right">40dp</dimen>
     <dimen name="circle.imageView.width">60dp</dimen>
     <dimen name="circle.imageView.height">60dp</dimen>
@@ -41,4 +41,8 @@
     <dimen name="image.layout.height">40dp</dimen>
     <dimen name="toolbar.layout.height">100dp</dimen>
     <dimen name="circle.imageView.margin.top.and.bottom">5dp</dimen>
+    <dimen name="button.margin.top.two">5dp</dimen>
+    <dimen name="image.icon.back.layout.height">50dp</dimen>
+    <dimen name="image.icon.back.marginleftright">40dp</dimen>
+    <dimen name="listview.margin.bottom">20dp</dimen>
 </resources>
