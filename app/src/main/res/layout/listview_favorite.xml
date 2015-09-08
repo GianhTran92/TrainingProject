@@ -15,7 +15,7 @@
         android:layout_gravity="center"
         android:layout_centerVertical="true"
         android:text="@string/textview.title.text.animal"
-        android:gravity="center"/>
+        android:gravity="center" />
     <TextView
         android:id="@+id/txtIcon"
         android:layout_width="wrap_content"
