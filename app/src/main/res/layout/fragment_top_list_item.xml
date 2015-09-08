@@ -16,6 +16,6 @@
             android:layout_marginLeft="@dimen/listView.margin.left.and.right"
             android:layout_marginRight="@dimen/listView.margin.left.and.right"
             android:layout_marginTop="@dimen/listView.margin.top"
-            android:layout_marginBottom="@dimen/listview.margin.bottom">
+            android:layout_marginBottom="@dimen/listView.margin.bottom">
         </ListView>
 </RelativeLayout>
