@@ -20,7 +20,7 @@
             android:background="@color/blue_background"
             android:orientation="vertical"
             android:layout_weight="1">
-            <ImageView
+            <vn.asiantech.learnenglish.core.CircleImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/image.signup.margintop"
