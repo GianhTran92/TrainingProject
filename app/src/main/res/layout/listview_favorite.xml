@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/circle.imageView.height"
+    android:layout_weight="30">
+    <TextView
+        android:id="@+id/txtWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textView.margin.left"
+        android:layout_marginBottom="@dimen/circle.imageView.margin.top.and.bottom"
+        android:layout_marginTop="@dimen/circle.imageView.margin.top.and.bottom"
+        android:textSize="@dimen/text.title.textSize"
+        android:textColor="@color/Black"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:text="@string/textview.title.text.animal"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/txtIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/textView.icon.margin.left.and.right"
+        android:layout_marginRight="@dimen/textView.icon.margin.left.and.right"
+        android:layout_toRightOf="@+id/txtWord"
+        android:layout_centerVertical="true"
+        android:text="@string/textview.icon"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/text.title.textSize" />
+
+    <TextView
+        android:id="@+id/txtWordPronounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/txtIcon"
+        android:layout_centerVertical="true"
+        android:text="@string/textview.title.text.animal"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/text.title.textSize" />
+
+    <ImageView
+        android:id="@+id/imgSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_sound"
+        android:layout_marginRight="@dimen/imageView.marginRight"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"/>
+</RelativeLayout>
