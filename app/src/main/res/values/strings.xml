@@ -31,6 +31,8 @@
     <string name="button_text_cancel">Cancel</string>
     <string name="error.account">Tài khoản chưa đúng</string>
     <string name="dialog_forget_password_title">FIND YOUR ACCOUNT</string>
+    <string name="alarmString">Aleart</string>
+    <string name="time_button">Set time</string>
 
 
 </resources>

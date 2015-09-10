@@ -4,6 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/frameContain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <include
         android:id="@+id/toolbar"
@@ -26,4 +30,5 @@
         app:pstsShouldExpand="true"
         android:background="@color/taptrip.background"
         android:layout_height="@dimen/tabars_height" />
+    </RelativeLayout>
 </RelativeLayout>

@@ -1,13 +1,167 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="vn.asiantech.learnenglish.fragment.Tab4Fragment">
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#1e92ff"
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp">
+        <ImageButton
+            android:id="@+id/imgBtnBackSetting"
+            android:src="@drawable/icon4"
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/editText"
+
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:layout_alignBaseline="@+id/imgBtnBackSetting"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imgViewLogo"
+        android:layout_below="@+id/layoutTop"
+        android:src="@drawable/logo_small"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgViewLogo"
+        android:layout_width="fill_parent"
+
+        android:layout_margin="20dp"
+
+        android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/tvLine1"
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:background="#743c3f41"
+            android:layout_height="1dp"
+            />
+        <LinearLayout
+            android:id="@+id/lnLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tvInviteFriends"
+                android:text="Invite Friends"
+                android:layout_gravity="center"
+
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/imgBntInviteFriends"
+                android:layout_gravity="center"
+                android:layout_marginLeft="226dp"
+                android:background="@drawable/ico_next_hd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvLine2"
+            android:layout_below="@+id/lnLayout1"
+            android:layout_width="fill_parent"
+            android:background="#743c3f41"
+            android:layout_height="1dp"
+            />
+        <LinearLayout
+            android:id="@+id/lnLayout2"
+            android:layout_below="@+id/tvLine2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tvNotificationSettings"
+                android:layout_gravity="center"
+
+                android:text="Notification Settings"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/imgBtnNotificationSettings"
+                android:layout_gravity="center"
+                android:layout_marginLeft="180dp"
+                android:background="@drawable/ico_next_hd"
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/tvLine3"
+            android:layout_below="@+id/lnLayout2"
+            android:layout_width="fill_parent"
+            android:background="#743c3f41"
+            android:layout_height="1dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/lnLayout3"
+            android:layout_below="@+id/tvLine3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tvSound"
+                android:text="Sound"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ToggleButton
+                android:id="@+id/tggBtnSound"
+                android:layout_gravity="center"
+                android:layout_marginLeft="240dp"
+                android:background="@drawable/toggle_selector"
+                android:layout_width="35dp"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLine4"
+            android:layout_below="@+id/lnLayout3"
+            android:layout_width="fill_parent"
+            android:background="#743c3f41"
+            android:layout_height="1dp" />
+
+    </RelativeLayout>
+
+
+    <vn.asiantech.learnenglish.tabstrip.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/tittle_fragment_four" />
+        app:pstsIndicatorColor="@android:color/transparent"
+        app:pstsIndicatorHeight="0dp"
+        app:pstsShouldExpand="true"
+        android:background="@color/taptrip.background"
+        android:layout_height="@dimen/tabars_height" />
 
-</FrameLayout>
+
+</RelativeLayout>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="vn.asiantech.learnenglish" >
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
 
     <application
         android:allowBackup="true"
@@ -20,6 +22,10 @@
             android:name=".activities.MainActivity_"
             android:label="@string/title_activity_login" >
         </activity>
+        <service
+            android:name=".Service.AlarmService"
+            android:enabled="true" />
+        <receiver android:name=".Receiver.AlarmReceiver" />
     </application>
 
 </manifest>
